@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&display=swap');
+:root{
+    --color1: #249280;
+    --color2: #20e07a;
+    --color3: #1d8fae;
+
+    --font1: "Google Sans Code", monospace;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    width: 100vw;
+}
+
+/* barra de navegacion */
+.navbar {
+    background-color: white;
+}
+
+#logo-nav {
+    height: 90px;
+    width: 90px;
+    justify-content: center;
+}
+
+/* pagina home */
+
+#home {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/img/fondo1.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    font-size: 4.2rem;
+    font-weight: bold;
+    font-family: var(--font1);
+    background: linear-gradient(270deg, #249280, #1d8fae, #20e07a);
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+
+    background-clip: text;
+    color: transparent;
+    animation: moverGlb 8s ease infinite;
+}
+
+@keyframes moverGlb {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+#eslogan {
+    font-size: 2.6rem;
+    font-family: var(--font1);
+}
+
+.btn-success {
+    background-color: #249280;
+    border: #1d8fae;
+    font-family: var(--font1);
+}
+
+.btn-success:hover {
+    background-color: #249280;
+}
+
+/* acerca de nosotros */
+
+.empresa{
+    height: 50vh;
+    background-image: url("/img/reunion.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+.txt-shadow{
+    background-color: rgba(0, 0, 0, 0.65);
+}
+
+.empresa-title{
+    font-weight: 800;
+    font-size: 2.3rem;
+    font-family: var(--font1);
+    color: #fff;
+    margin: 0 3%;
+}
+
+.empresa-txt{
+    color: #fff;
+    font-family: var(--font1);
+    font-size: 1.2rem;
+    margin: 0 3%;
+}
+
+.about-title{
+    font-family: var(--font1);
+    font-size: 1.5rem;
+}
+.about-txt{
+    font-family: var(--font1);
+    font-size: 1.1rem;
+}
+
+/* footer */
+.shadow-top{
+    box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.5); 
+}
+
+footer{
+    height: 10%;
+    background-color: black;
+    color: white;
+}
+
+#logo-footer{
+    height: 80px;
+    width: 70px;
+}
+
+.footer-enlaces{
+    text-decoration: none;
+    color: rgb(179, 179, 179);
+}
