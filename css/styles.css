@@ -95,6 +95,29 @@ h1 {
     padding: 40px 0;
 }
 
+.txt-custom{
+    font-family: var(--font1);
+}
+
+/* estilos pagina nosotros */
+
+.txt-color{
+    color: #6bd80c;
+}
+
+.team-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+  }
+
+  /* Opción: volver a color al pasar el mouse */
+  .team-img:hover {
+    filter: grayscale(0%);
+  }
+
 
 
 
