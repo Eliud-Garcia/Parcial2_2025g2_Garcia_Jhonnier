@@ -1,11 +1,153 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portafolio</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
+
 <body>
-    
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="../index.html">
+                <img src="../img/logo.png" alt="Logo Empresa" width="50" height="50" class="me-2">
+                <span>CoderHub</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+                aria-controls="navMenu" aria-expanded="false" aria-label="Mostrar menú">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="../index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./nosotros.html">Nosostros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./servicios.html">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./portafolio.html">Portafolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="container my-5" id="portafolio">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold">Nuestro portafolio</h2>
+            <p>Conoce algunos de los proyectos que hemos desarrollado para nuestros clientes.</p>
+        </div>
+
+        <div class="row g-4">
+            <!-- Proyecto 1 -->
+            <div class="col-md-4">
+                <div class="card shadow-sm">
+                    <img src="../img/proyecto1.jpg" class="card-img-top" alt="Proyecto 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Proyecto Web Corporativo</h5>
+                        <p class="card-text">Diseño y desarrollo de un sitio web moderno y responsivo para una empresa
+                            líder en su sector.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Proyecto 2 -->
+            <div class="col-md-4">
+                <div class="card shadow-sm">
+                    <img src="../img/proyecto2.jpg" class="card-img-top" alt="Proyecto 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Aplicación Móvil</h5>
+                        <p class="card-text">Desarrollo de una app multiplataforma que conecta a miles de usuarios con
+                            servicios en tiempo real.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Proyecto 3 -->
+            <div class="col-md-4">
+                <div class="card shadow-sm">
+                    <img src="../img/proyecto3.jpg" class="card-img-top" alt="Proyecto 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Plataforma de E-commerce</h5>
+                        <p class="card-text">Implementación de una tienda en línea escalable con integración de
+                            pasarelas de pago seguras.</p>
+                    </div>
+                </div>
+            </div>
+             <!-- Proyecto 4 -->
+        <div class="col-md-4">
+            <div class="card shadow-sm">
+                <img src="../img/proyecto4.jpg" class="card-img-top" alt="Proyecto 4">
+                <div class="card-body">
+                    <h5 class="card-title">Sistema de Gestión Interna</h5>
+                    <p class="card-text">Desarrollo de un software a medida para optimizar la gestión de recursos y procesos internos.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Proyecto 5 -->
+        <div class="col-md-4">
+            <div class="card shadow-sm">
+                <img src="../img/proyecto5.jpg" class="card-img-top" alt="Proyecto 5">
+                <div class="card-body">
+                    <h5 class="card-title">Landing Page Promocional</h5>
+                    <p class="card-text">Creación de una landing page enfocada en la conversión y atracción de nuevos clientes.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Proyecto 6 -->
+        <div class="col-md-4">
+            <div class="card shadow-sm">
+                <img src="../img/proyecto6.jpg" class="card-img-top" alt="Proyecto 6">
+                <div class="card-body">
+                    <h5 class="card-title">Dashboard Analítico</h5>
+                    <p class="card-text">Implementación de un panel interactivo con métricas en tiempo real para toma de decisiones estratégicas.</p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-5">
+        <div class="container">
+            <div class="row">
+
+                <!-- Información de contacto -->
+                <div class="col-md-6 mb-3 d-flex flex-column align-items-center">
+                    <h5>Contacto</h5>
+                    <p class="mb-1 txt-custom">📞 Teléfono: +57 300 123 4567</p>
+                    <p class="mb-1 txt-custom">📧 Correo: contacto@coderhub.com</p>
+                </div>
+
+                <!-- Redes sociales -->
+                <div class="col-md-6 mb-3 text-md-end d-flex flex-column align-items-center">
+                    <h5 class="txt-custom">Síguenos</h5>
+                    <div class="d-flex">
+                        <a href="#" class="text-light me-3 fs-4"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-light me-3 fs-4"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="text-light me-3 fs-4"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-light fs-4"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Línea final -->
+            <div class="text-center pt-3 border-top border-secondary mt-4">
+                <p class="mb-0 txt-custom">© 2025 CoderHub. <br> Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 </body>
+
 </html>
