@@ -16,7 +16,7 @@
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
             <a class="navbar-brand d-flex align-items-center" href="#">
-                <img src="./img/logo.png" alt="Logo Empresa" width="50" height="50" class="me-2">
+                <img src="./img/logo_home.png" alt="Logo Empresa" width="50" height="50" class="me-2">
                 <span>CoderHub</span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
@@ -41,7 +41,7 @@
             <h1 class="">Impulsa tu empresa con innovación y tecnología</h1>
             <p class="lead main-txt">Soluciones digitales integrales, inteligencia artificial y transformación digital
                 para tu sector</p>
-            <a href="#" class="btn btn-primary btn-lg">Comienza ahora</a>
+            <a href="./html/contacto.html" class="btn btn-primary btn-lg">Comienza ahora</a>
         </div>
     </section>
 
@@ -144,29 +144,26 @@
 
     <!-- Formulario de contacto / CTA final -->
     <section class="contact-form container ps-4 pe-4">
+
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <h3 class="text-center mb-4 txt-custom">Cuéntanos cómo podemos ayudarte</h3>
                 <form>
                     <div class="mb-3">
-                        <label for="nombre" class="form-label">Nombre</label>
-                        <input type="text" class="form-control" id="nombre" placeholder="Tu nombre">
+                        <label for="nombre" class="form-label">Nombre completo</label>
+                        <input type="text" class="form-control" id="nombre" placeholder="Tu nombre" required>
                     </div>
                     <div class="mb-3">
-                        <label for="empresa" class="form-label">Empresa</label>
-                        <input type="text" class="form-control" id="empresa" placeholder="Nombre de la empresa">
+                        <label for="correo" class="form-label">Correo electrónico</label>
+                        <input type="email" class="form-control" id="correo" placeholder="tunombre@ejemplo.com"
+                            required>
                     </div>
                     <div class="mb-3">
-                        <label for="email" class="form-label">Correo electrónico</label>
-                        <input type="email" class="form-control" id="email" placeholder="ejemplo@correo.com">
+                        <label for="mensaje" class="form-label">Mensaje</label>
+                        <textarea class="form-control" id="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..."
+                            required></textarea>
                     </div>
-                    <div class="mb-3">
-                        <label for="mensaje" class="form-label">Mensaje / Desafío</label>
-                        <textarea class="form-control" id="mensaje" rows="4"></textarea>
-                    </div>
-                    <div class="text-center">
-                        <button type="submit" class="btn btn-primary">Enviar</button>
-                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Enviar</button>
                 </form>
             </div>
         </div>
