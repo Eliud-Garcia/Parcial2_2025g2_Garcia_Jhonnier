@@ -1,11 +1,240 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CoderHub</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
+
 <body>
-    
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="../index.html">
+                <img src="../img/logo.png" alt="Logo Empresa" width="50" height="50" class="me-2">
+                <span>CoderHub</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+                aria-controls="navMenu" aria-expanded="false" aria-label="Mostrar menú">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="../index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./nosotros.html">Nosostros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./servicios.html">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./portafolio.html">Portafolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección Servicios -->
+    <section class="py-5 bg-white">
+        <div class="container">
+            <h2 class="text-center mb-5 fw-bold">Nuestros Servicios</h2>
+            <div class="row g-4">
+
+                <!-- Servicio 1: Desarrollo Web -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 shadow-sm border-0 service-card">
+                        <div class="card-body text-center p-4">
+                            <div class="icon mb-4">
+                                <i class="bi bi-code-slash fs-1 text-primary"></i>
+                            </div>
+                            <h5 class="card-title mb-3">Desarrollo Web</h5>
+                            <p class="card-text">
+                                Construimos sitios web escalables, responsivos y con experiencias digitales de alto
+                                impacto.
+                            </p>
+                            <a href="#web" class="stretched-link text-decoration-none fw-semibold">Ver más →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Servicio 2: Apps Móviles -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 shadow-sm border-0 service-card">
+                        <div class="card-body text-center p-4">
+                            <div class="icon mb-4">
+                                <i class="bi bi-phone fs-1 text-success"></i>
+                            </div>
+                            <h5 class="card-title mb-3">Apps Móviles</h5>
+                            <p class="card-text">
+                                Desarrollo de aplicaciones nativas e híbridas para Android y iOS, con UI/UX optimizado.
+                            </p>
+                            <a href="#movil" class="stretched-link text-decoration-none fw-semibold">Ver más →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Servicio 3: Consultoría -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 shadow-sm border-0 service-card">
+                        <div class="card-body text-center p-4">
+                            <div class="icon mb-4">
+                                <i class="bi bi-lightbulb fs-1 text-warning"></i>
+                            </div>
+                            <h5 class="card-title mb-3">Consultoría</h5>
+                            <p class="card-text">
+                                Asesoramos estratégicamente en transformación digital, arquitectura tecnológica y
+                                optimización de procesos.
+                            </p>
+                            <a href="#consultoria" class="stretched-link text-decoration-none fw-semibold">Ver más →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Servicio 4: Soporte -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 shadow-sm border-0 service-card">
+                        <div class="card-body text-center p-4">
+                            <div class="icon mb-4">
+                                <i class="bi bi-headset fs-1 text-danger"></i>
+                            </div>
+                            <h5 class="card-title mb-3">Soporte</h5>
+                            <p class="card-text">
+                                Servicio continuo de mantenimiento, monitoreo y soporte técnico para asegurar
+                                continuidad operativa.
+                            </p>
+                            <a href="#soporte" class="stretched-link text-decoration-none fw-semibold">Ver más →</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid servicio-web" id="web">
+        <div class="row align-items-center flex-md-row-reverse">
+
+            <!-- Imagen -->
+            <div class="col-md-6 p-0">
+                <img src="../img/imagen_web.jpg" alt="imagen de pagina web" class="img-fluid w-100">
+            </div>
+
+            <!-- Texto -->
+            <div class="col-md-6 py-5 px-4">
+                <h2 class="fw-bold txt-custom pt-3 title-web">Páginas profesionales</h2>
+                <p class="txt-custom txt-web">
+                    Nuestro servicio de desarrollo web combina innovación, diseño responsivo y tecnología de vanguardia
+                    para crear sitios rápidos, seguros y fáciles de usar. Nos enfocamos en construir experiencias
+                    digitales que no solo atraen a los usuarios, sino que también generan resultados medibles para tu
+                    negocio. Desde páginas corporativas hasta plataformas complejas, transformamos tus ideas en
+                    soluciones web escalables y de alto impacto.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid servicio-movil" id="movil">
+        <div class="row align-items-center">
+
+            <!-- Imagen -->
+            <div class="col-md-6 p-0">
+                <img src="../img/imagen_movil.jpg" alt="imagen de desarrollo movil" class="img-fluid w-100">
+            </div>
+
+            <!-- Texto -->
+            <div class="col-md-6 py-5 px-4">
+                <h2 class="fw-bold txt-custom pt-3 title-movil">Apps móviles completas</h2>
+                <p class="txt-custom">
+                    Creamos aplicaciones móviles intuitivas, seguras y escalables que conectan a tu negocio con los
+                    usuarios en cualquier momento y lugar. Nuestro equipo combina diseño atractivo y tecnología de
+                    última generación para ofrecer experiencias móviles que impulsan la interacción, fidelización y
+                    crecimiento de tu marca, tanto en iOS como en Android.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid servicio-consultoria" id="consultoria">
+        <div class="row align-items-center flex-md-row-reverse">
+
+            <!-- Imagen -->
+            <div class="col-md-6 p-0">
+                <img src="../img/imagen_consultoria" alt="imagen de consultoria" class="img-fluid w-100">
+            </div>
+
+            <!-- Texto -->
+            <div class="col-md-6 py-5 px-4">
+                <h2 class="fw-bold txt-custom pt-3 title-consultoria">Soluciones a tu medida</h2>
+                <p class="txt-custom txt-consultoria">
+                    Nuestro servicio de consultoría tecnológica te guía en la toma de decisiones estratégicas para que
+                    tu negocio aproveche al máximo las oportunidades digitales. Analizamos tus procesos, identificamos
+                    áreas de mejora y diseñamos planes de acción personalizados que optimizan recursos y potencian
+                    resultados. Con un enfoque práctico y colaborativo, te ayudamos a implementar soluciones efectivas
+                    que aumentan la eficiencia, reducen costos y preparan a tu empresa para enfrentar los retos del
+                    futuro.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid servicio-soporte" id="soporte">
+        <div class="row align-items-center">
+
+            <!-- Imagen -->
+            <div class="col-md-6 p-0">
+                <img src="../img/imagen_soporte.jpg" alt="imagen de servicio de soporte" class="img-fluid w-100">
+            </div>
+
+            <!-- Texto -->
+            <div class="col-md-6 py-5 px-4">
+                <h2 class="fw-bold txt-custom pt-3 title-soporte">Soporte técnico confiable</h2>
+                <p class="txt-custom">
+                    Brindamos soporte continuo para garantizar que tus sistemas y aplicaciones funcionen de manera
+                    estable, segura y sin interrupciones.
+                    Nuestro equipo está siempre disponible para resolver incidentes, implementar mejoras y ofrecer
+                    asistencia proactiva, asegurando que tu negocio se mantenga productivo y protegido en todo momento.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-5">
+        <div class="container">
+            <div class="row">
+
+                <!-- Información de contacto -->
+                <div class="col-md-6 mb-3 d-flex flex-column align-items-center">
+                    <h5>Contacto</h5>
+                    <p class="mb-1 txt-custom">📞 Teléfono: +57 300 123 4567</p>
+                    <p class="mb-1 txt-custom">📧 Correo: contacto@coderhub.com</p>
+                </div>
+
+                <!-- Redes sociales -->
+                <div class="col-md-6 mb-3 text-md-end d-flex flex-column align-items-center">
+                    <h5 class="txt-custom">Síguenos</h5>
+                    <div class="d-flex">
+                        <a href="#" class="text-light me-3 fs-4"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-light me-3 fs-4"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="text-light me-3 fs-4"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-light fs-4"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Línea final -->
+            <div class="text-center pt-3 border-top border-secondary mt-4">
+                <p class="mb-0 txt-custom">© 2025 CoderHub. <br> Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 </body>
+
 </html>

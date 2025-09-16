@@ -9,8 +9,7 @@
 }
 
 * {
-    margin: 0;
-    padding: 0;
+
     box-sizing: border-box;
 }
 
@@ -21,7 +20,7 @@ body {
 
 /* Estilos pagina inicio */
 .hero {
-    background: url("../img/fondo3.webp") center center / cover no-repeat;
+    background: url("../img/fondo1.webp") center center / cover no-repeat;
     color: white;
     min-height: 80vh;
     display: flex;
@@ -31,7 +30,7 @@ body {
 
 
 h1 {
-    font-size: 4.2rem;
+    font-size: 2.8rem;
     font-weight: 800;
     font-family: var(--font1);
     background: linear-gradient(270deg, #249280, #1d8fae, #20e07a);
@@ -59,7 +58,7 @@ h1 {
     }
 }
 
-.main-txt{
+.main-txt {
     color: black;
     font-family: var(--font1);
     font-size: 1.3rem;
@@ -95,13 +94,13 @@ h1 {
     padding: 40px 0;
 }
 
-.txt-custom{
+.txt-custom {
     font-family: var(--font1);
 }
 
 /* estilos pagina nosotros */
 
-.txt-color{
+.txt-color {
     color: #6bd80c;
 }
 
@@ -111,13 +110,63 @@ h1 {
     object-fit: cover;
     filter: grayscale(100%);
     transition: filter 0.3s ease;
-  }
+}
 
-  /* Opción: volver a color al pasar el mouse */
-  .team-img:hover {
+/* Opción: volver a color al pasar el mouse */
+.team-img:hover {
     filter: grayscale(0%);
-  }
+}
+
+/* estilos para pagina de servicios */
+
+.servicio-web{
+    background: url("../img/fondo_servicios.webp") center center / cover no-repeat;
+    color: white;
+}
+
+.title-web{
+    color: var(--color2);
+}
+.txt-web{
+    color: var(--color3);
+}
+
+.servicio-movil{
+    background: url("../img/fondo_movil.webp") center center / cover no-repeat;
+    color: white;
+}
+
+.title-movil{
+    color: white;
+}
+
+.servicio-consultoria{
+    background-color: #03081b;
+}
+
+.title-consultoria{
+    color: var(--color1);
+}
+
+.txt-consultoria{
+    color: white;
+}
+
+.servicio-soporte{
+    background: url("../img/fondo_soporte.webp") center center / cover no-repeat;
+    color: white;
+}
 
 
-
-
+/* cuando es una tablet */
+@media (min-width: 883px) {
+    .hero {
+        background: url("../img/fondo2.webp") center center / cover no-repeat;
+    }
+}
+/* cuando es una pc */
+@media (min-width: 1024px) {
+    .hero {
+        background: url("../img/fondo3.webp") center center / cover no-repeat;
+    }
+}
